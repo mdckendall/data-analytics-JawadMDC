@@ -10,5 +10,38 @@ class Main {
 		FileReader fr = new FileReader("names.txt");
 		Scanner fileScanner = new Scanner(fr);
 		
+		// Code starting here:
+		int resp;
+		Scanner scanner = new Scanner(System.in);
+		while (fileScanner.hasNextLine()) 
+		{
+            		arrayList.add(fileScanner.nextLine());
+        	}
+		
+		 while (userChoice != 5) {
+		 System.out.println("Press 1 to learn about salary.\n""Press 2 to learn about the job.\n""Press 3 to learn about demand.\n""Press 4 to view current students.\n""Press 5 to quit.");
+		 resp = scanner.nextInt();
+		 
+		 switch (resp)
+		   {
+			case 1:
+			    System.out.println("$98,345 average salary in South Florida!");
+			    break;
+			case 2:
+			    System.out.println("US News - 100 Best Jobs!");
+			    break;
+			case 3:
+			    System.out.println("Top 10 Forbes In-Demand Jobs!");
+			    break;
+			case 4:
+			    System.out.println("Current Students:");
+			     arrayList.forEach(System.out::println);
+				break;
+			case 5:
+         		   break;
+                    }
+            }
+        }
+	}
 	}
 }
