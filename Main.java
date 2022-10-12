@@ -11,7 +11,7 @@ class Main {
 		Scanner fileScanner = new Scanner(fr);
 		
 		// Code starting here:
-		int resp;
+		int resp = 0;
 		Scanner scanner = new Scanner(System.in);
 		while (fileScanner.hasNextLine()) 
 		{
