@@ -19,7 +19,7 @@ class Main {
         	}
 		
 		 while (userChoice != 5) {
-		 System.out.println("Press 1 to learn about salary.\n""Press 2 to learn about the job.\n""Press 3 to learn about demand.\n""Press 4 to view current students.\n""Press 5 to quit.");
+		 System.out.println("Press 1 to learn about salary.\nPress 2 to learn about the job.\nPress 3 to learn about demand.\nPress 4 to view current students.\nPress 5 to quit.");
 		 resp = scanner.nextInt();
 		 
 		 switch (resp)
@@ -42,6 +42,4 @@ class Main {
                     }
             }
         }
-	}
-	}
 }
